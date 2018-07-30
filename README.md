@@ -1,9 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 26 - Frontend Tooling & React
 ===
 
-NO TRAVIS
-NO HEROKU
-GitHub PR: 
+NO TRAVIS Required
+NO HEROKU Required
+GitHub PR: https://github.com/GitHubMaxwell/26-frontend-tooling-and-react/pull/1
 
 #### Documentation  
 * clone down the app
