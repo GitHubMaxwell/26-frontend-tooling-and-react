@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import { BONG, BUNNY, CALVIN, CHEESE, DAEMON, DEFAULT, DRAGON } from 'cowsay';
+import { BONG, SKELETON, CHEESE, DAEMON, DEFAULT, DRAGON,STEGOSAURUS, EYES } from 'cowsay';
 import './style/app.scss';
 
 
@@ -36,11 +36,14 @@ class Menu extends React.Component {
         <select onChange={this.handleChange.bind(this)}>
           <option value = {DAEMON}>DAEMON</option>
           <option value = {BONG}>BONG</option>
-          <option value = {BUNNY}>BUNNY</option>
-          <option value = {CALVIN}>CALVIN</option>
+          <option value = {SKELETON}>SKELETON</option>
           <option value = {CHEESE}>CHEESE</option>
-          <option value = {DEFAULT}>DEFAULT</option>
+          <option value = {STEGOSAURUS}>STEGOSAURUS</option>
           <option value = {DRAGON}>DRAGON</option>
+          <option value = {DEFAULT}>DEFAULT</option>
+          <option value = {EYES}>EYES</option>
+
+          
         </select>
       </React.Fragment>
     );
@@ -59,3 +62,17 @@ export default Menu;
     <li>Default</li>
     <li>Dragon</li>
 </ul> */
+
+/*
+
+ <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">BONG</a>
+    <a href="#">BUNNY</a>
+    <a href="#">DRAGON</a>
+  </div>
+</div> 
+
+
+*/

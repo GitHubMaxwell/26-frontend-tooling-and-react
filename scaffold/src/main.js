@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/app.scss';
 import Faker from 'faker';
-import { say, BONG, BUNNY, CALVIN, CHEESE, DAEMON, DEFAULT, DRAGON} from 'cowsay';
+import { say, DAEMON} from 'cowsay';
 import Menu from './menu.js';
+import {Title, Deck, Card, Pre} from './style/modules-style.js';
 
-
+// const Title = styled.h1`
+//     color:green;
+//     font-size: 30px;
+// `;
 
 class Header extends React.Component {
 // youve been passed monster from App, this.state.monster
@@ -22,7 +26,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <h2>Generate Cowsay Lorem</h2>
+      <Title>Generate Cowsay Lorem</Title>
     );
   }
 }
@@ -70,8 +74,17 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <Menu menuSelect={this.menuSelect.bind(this)}/>
+        {/* <Menu menuSelect={this.menuSelect}/> */}
+
         <button onClick={this.cowTalk}>click me</button>
-        <pre>{this.state.content}</pre>
+        <Deck>
+          <Card>
+            <Pre>{this.state.content}</Pre>
+          </Card>
+          <Card>
+            <Pre>{this.state.content}</Pre>
+          </Card>
+        </Deck>
         <Footer />
       </React.Fragment>
     );
